@@ -1,10 +1,16 @@
-ruby '2.4.4'
-#ruby=2.4.4@catarse-kpi
+ruby '2.7.1'
+#ruby=2.7.1@epiclass
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '2.7.1'
 
 gem 'rails', '~> 4.2.11'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
+gem 'bigdecimal', '1.3.5'
+
+gem 'countries', '3.0.0'
 gem 'protected_attributes'
 gem 'rails-observers'
 gem 'rb-readline'
@@ -41,7 +47,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.14.11'
+gem 'catarse_pagarme', '~> 2.16.2'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -61,7 +67,7 @@ gem 'simple_token_authentication', '~> 1.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
 gem 'omniauth-facebook'
 gem 'koala'
-gem 'devise', '3.5.10'
+gem 'devise', '4.7.2'
 gem 'pundit'
 gem 'json_web_token'
 
@@ -176,3 +182,4 @@ gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
 gem "rack", ">= 1.6.11"
 gem "loofah", ">= 2.2.3"
+gem 'concurrent-ruby'
